@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/create">
+
+        <table>
+            <tr>
+                <td>
+                    <label for="fname">First name</label><br>
+                    <input type="text" name="fname" placeholder="Enter your first name"required> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="lname">Last name</label><br>
+                    <input type="text" name="lname" placeholder="enter your second name"required>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email" placeholder="enter your email"required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Password</label><br>
+                    <input type="text" name="password" id="password" placeholder="enter your password"required>
+                </td>
+            </tr>
+
+            <tr>
+            <td>
+                <label for="password"> Confirm Password</label><br>
+                <input type="text" name="password" id="Confirm password" placeholder="enter your password again"required>
+            </td>
+
+            <td>
+                <label for="gender"Gender:></label><br>
+                <input type="radio" name="gender" id="gender">
+                <b>Male</b>
+                <input type="radio" name="gender" id="gender">
+                <b>Female</b>
+            </td>
+
+            <td>
+                <label for="hobbies">Hobbies</label><br>
+                <input type="checkbox"name="hobbies" id="hobbies">
+                <b>Music</b>
+                <input type="Checkbox"name="hobbies" id="hobbies">
+                <b>Sports</b>
+                <input type="checkbox"name="hobbies" id="hobbies">
+                <b>Travel</b>
+                <input type="checkbox"name="hobbies" id="hobbies">
+                <b>Movies</b>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="sincome">Source of Income</label><br>
+            <select name="sincome" id="income">
+                <option value="">--select--</option>
+                <option value="Employeed">Employeed</option>
+                <option value="Not Employeed">Not Employeed</option>
+            </select>
+        </td>
+
+        <td>
+            <label for="rincome">Income</label><br>
+            <input type="range" name="rincome"id="rincome"min="o"max="20000">
+            <input type="button" value="20k">
+        </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="profilepic">upload Profile Picture</label><br>
+                <input type="file"name="profilepic"id="profilepic">
+            </td>
+
+            <td>
+                <label for="age">Age</label>
+                <input type="number"name="age"id="age">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><label for="bio">Bio</label><br>
+                <textarea name="bio" id="bio" cols="60" rows="10"></textarea>
+                </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button"value="create">
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
